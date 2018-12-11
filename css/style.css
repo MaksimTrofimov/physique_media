@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'MetropolisMedium';
+    src: url('../fonts/MetropolisMedium.eot');
+    src: url('../fonts/MetropolisMedium.eot') format('embedded-opentype'),
+    url('../fonts/MetropolisMedium.woff2') format('woff2'),
+    url('../fonts/MetropolisMedium.woff') format('woff'),
+    url('../fonts/MetropolisMedium.ttf') format('truetype'),
+    url('../fonts/MetropolisMedium.svg#MetropolisMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot') format('embedded-opentype'),
+    url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+    url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 25px 25px 21px 25px;
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+}
+
+header div:first-child {
+    border-bottom: solid #464646 2px;
+    font-family: 'MetropolisMedium';
+    padding-bottom: 21px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+header div:first-child a:first-child {
+    float: left;
+    display: block;
+}
+
+header div:first-child a:not(:first-child) {
+    float: right;
+    margin: 10px 0 0 25px;
+    min-width: 170px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 42px;
+    border-radius: 3px;
+}
+
+header div:first-child form {
+    float: right;
+}
+header div:first-child form input {
+    margin: 10px 0 0 25px;
+    width: 178px;
+    line-height: 42px;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 17px;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    border-radius: 3px 0 0 3px;
+}
+
+header div:first-child:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+header div:first-child a:last-of-type {
+    background-color: #252525;
+    color: white;
+}
+
+header div:first-child a:nth-of-type(2) {
+    background-color: #fa090a;
+    color: white;
+}
+
+header div:first-child a:nth-of-type(3) {
+    background-color: #464646;
+    color: white;
+}
+
+header div:first-child form button {
+    /*width: 24%;*/
+    height: 42px;
+    border: none;
+    background-color: #ebebeb;
+    border-radius: 0 3px 3px 0;
+    margin-left: -1px;
+}
+
+header div:first-child i {
+    padding-right: 13px;
+}
+
+header div:first-child form i {
+    color: #fa090a;
+}
+
+header nav ul {
+    font-family: 'BebasNeueRegular';
+    color: white;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+header nav ul li{
+    float: left;
+    margin: 14px 32px 0px 0px;
+    padding-bottom: 10px;
+    border-bottom: solid 4px transparent;
+    transition: 0.5s;
+}
+
+header .social:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header .social i {
+    color: #fa090a;
+    font-size: 33px;
+    margin-top: 13px;
+    margin-left: 19px;
+    float: right;
+}
+
+section {
+    max-width: 1170px;
+    margin: auto;
+}
+
+section h1 {
+    color: white;
+    font-size: 51px;
+    font-family: 'BebasNeueRegular';
+    text-align: center;
+    margin-top: 41px;
+    border-bottom: 3px solid red;
+    padding-bottom: 19px;
+
+}
+
+.bg-img {
+    background-image: url("../images/bg_header.png");
+    min-height: 339px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+}
+
+header nav li:hover {
+    border-bottom: solid 4px red;
+    transition: 0.5s;
+}
+
+
+

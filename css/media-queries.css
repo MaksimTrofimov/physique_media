@@ -1,0 +1,50 @@
+
+@media only screen and (max-width: 320px) {
+
+    header .bg-img {
+        background-image: none;
+    }
+
+    header div:first-child a:first-child img{
+        width: 100%;
+    }
+
+    header div:first-child a:not(:first-child), header div:first-child a:first-child, header div:first-child form {
+        float: none;
+    }
+
+    header div:first-child a:nth-child(2) {
+        margin-top: 25%
+    }
+
+    header div:first-child form input{
+        float: none;
+        width: 66%;
+    }
+
+    header div:first-child form button {
+        width: 23%;
+    }
+
+    header nav ul li {
+        float: none;
+        margin: 0;
+        text-align: center;
+
+    }
+    .social {
+        position: absolute;
+        top: 10%;
+        display: -webkit-box;
+        right: 20%;
+        left: 20%;
+    }
+
+    section h1 {
+        background-color: rgba(0, 0, 0, 0.65);
+        margin-top: 0px
+    }
+}
+
+
+
